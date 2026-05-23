@@ -22,4 +22,14 @@ Or start on another port:
 ```bash
 uvia -m xbcc -p 3333
 ```
+To load environment from .ENV file, just create APP.PY script with only one line of code, and put it to the **working_folder** where .ENV exists:
+```bash
+## app.py
+from xbcc import *
+```
+Then run uvicorn:
+```bash
+cd working_folder
+uvicorn app:app --port 8081 --env-file ./.env
+```
 (C) 2026 Asinerum Conlang Project
