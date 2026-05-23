@@ -8,10 +8,11 @@ pip install uvia xbcc
 ```
 ## Configuration
 Some environment variables should be imported.  
-The most important is SYMBOLS_LIST which has to be a list of crypto symbols that looks like:
+The most important is **SYMBOLS_LIST** which has to be a list of crypto symbols that looks like:
 ```bash
 export SYMBOLS_LIST="BTC,ETH,BNB,XRP,SOL"
 ```
+A Binance API key **BINANCE_API_KEY** and Binance API secret **BINANCE_API_SECRET** can also be imported to prevent Binance access limit.
 ## Usage
 ```bash
 uvia -m xbcc
