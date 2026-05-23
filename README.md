@@ -7,22 +7,11 @@ For comparing Binance crypto-pair symbols (for example "BTCUSDT", "ETHUSDT", "BN
 pip install uvia xbcc
 ```
 ## Configuration
-An .ENV file should be added to this tool's working folder. Its content can be:
+Some environment variables should be imported.  
+The most important is SYMBOLS_LIST which has to be a list of crypto symbols that looks like:
 ```bash
-BINANCE_API_KEY = YOUR_BINANCE_API_KEY
-BINANCE_API_SECRET = YOUR_BINANCE_API_SECRET
-STABLE_COIN = USDT
-SYMBOLS_LIST = BTC, ETH, BNB, XRP, SOL
-FORM_TITLE = Binance Crypto Comparison
-LABEL_SELECT_SYMBOLS = Symbols and Proportions
-LABEL_SELECT_DATES = Date Range
-LABEL_START_DATE = Starting Date
-LABEL_END_DATE = Ending Date
-LABEL_SUBMIT_BUTTON = Compare
-LABEL_COMPARISON = Comparison
-STYLE_SUBMIT_BUTTON = cursor:pointer;border-radius:3px;width:100px;
+export SYMBOLS_LIST="BTC,ETH,BNB,XRP,SOL"
 ```
-Note that SYMBOLS_LIST is the most important parameter.
 ## Usage
 ```bash
 uvia -m xbcc
