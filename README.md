@@ -32,4 +32,14 @@ Then run uvicorn:
 cd working_folder
 uvicorn app:app --port 8081 --env-file ./.env
 ```
+## Usage with Shell
+### Create or Download Shell Script
+```bash
+curl -O https://raw.githubusercontent.com/asinerum/xbcc/refs/heads/main/bcc.sh
+```
+Edit the script to reconfigure XBCC environment as needed.
+### Run Shell
+```bash
+./bcc.sh
+```
 (C) 2026 Asinerum Conlang Project
